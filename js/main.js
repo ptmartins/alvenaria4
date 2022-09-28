@@ -8,3 +8,17 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
 })
+
+$(document).ready(function(){
+
+    console.log('slick');
+
+    $('.slide-show').slick({
+        autoplay: true,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
+  });

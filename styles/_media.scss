@@ -53,7 +53,7 @@
 
         .menu-btn:checked ~ .nav-links {
             opacity: 1;
-            clip-path: circle (100% at center);
+            clip-path: circle(100%);   
 
             .nav-link {
                 opacity: 1;
