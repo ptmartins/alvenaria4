@@ -1,9 +1,10 @@
 .section--hero {
+    margin-top: 9rem;
     position: relative; 
 }
 
 .slide-show {
-    height: 100vh;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -18,89 +19,25 @@
     z-index: 0;   
 }
 
+.slick-list,
+.slick-track {
+    height: 100%; 
+}
+
 .slider__overlay {
-    background-color: rgba(255, 255, 255, .8);
-    left: 6rem;
-    padding: 3rem;
+    left: 0;
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    width: 55%;
+    width: 100%;
 }
 
-
-// Animations
-@-webkit-keyframes imageAnimation {
-    0% {
-        opacity: 0;
-        -webkit-animation-timing-function: ease;
-                animation-timing-function: ease;
-    }
-    10% {
-        opacity: 1;
-        -webkit-animation-timing-function: ease;
-                animation-timing-function: ease;
-    }
-    20% {
-        opacity: 1;
-        -webkit-animation-timing-function: ease;
-                animation-timing-function: ease;
-    }
-    30% {
-        opacity: 0;
-        -webkit-animation-timing-function: ease;
-                animation-timing-function: ease;
-    }
+.overlay__content {
+    background-color: rgba(255, 255, 255, .9);
+    padding: 3rem;
+    width: 70%;
 }
-
-
-
-@keyframes imageAnimation {
-    0% {
-        opacity: 0;
-        -webkit-animation-timing-function: ease;
-                animation-timing-function: ease;
-    }
-    10% {
-        opacity: 1;
-        -webkit-animation-timing-function: ease;
-                animation-timing-function: ease;
-    }
-    20% {
-        opacity: 1;
-        -webkit-animation-timing-function: ease;
-                animation-timing-function: ease;
-    }
-    30% {
-        opacity: 0;
-        -webkit-animation-timing-function: ease;
-                animation-timing-function: ease;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .slide-show {
     position: relative;
@@ -110,7 +47,9 @@
     padding: 0;
     
     & > div {
+        height: 100%;
         position: relative;
+        width: 100%;
     }
 }
 
