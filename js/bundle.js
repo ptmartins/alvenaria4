@@ -1,0 +1,1 @@
+console.log(2222),$(document).ready((function(){$(".slide-show").slick({autoplay:!0,infinite:!0,speed:500,fade:!0,cssEase:"linear"})}));

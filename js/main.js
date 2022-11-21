@@ -1,24 +1,14 @@
-(function() {
-    let header = document.querySelector('.header');
+(function () {
 
-    window.addEventListener('scroll', () => {
-        let scrollPos = window.scrollY;
-        if(scrollPos > 10){
-            header.classList.add ('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    })
+    console.log(2222);    
 
-    $(document).ready(function(){
-
-        $('.slide-show').slick({
-            autoplay: true,
-            infinite: true,
-            speed: 500,
-            fade: true,
-            cssEase: 'linear'
-        });
+    $(document).ready(function () {
+    $('.slide-show').slick({
+      autoplay: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear'
     });
-    
+  });
 })();
