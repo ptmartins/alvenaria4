@@ -1,0 +1,19 @@
+.footer {
+    background-color: #2F2E2E;
+    color: #fff;
+
+    a {
+        color: #fff;
+    }
+}
+
+.footer__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: .9rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: .75rem 0;
+}

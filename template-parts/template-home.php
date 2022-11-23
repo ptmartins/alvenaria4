@@ -48,6 +48,38 @@
 <!-- Section Team -->
 <section class="section section--team">
     <div class="inner-wrapper">
-        <h2 class="section__title">Equipa</h2>
+        <h2 class="section__title section__title--team">Equipa</h2>
+        <?php
+            if(have_rows('team')) {
+        ?>
+            <div class="team">
+            <?php
+                // Loop through rows.
+                while(have_rows('team')) {
+                    
+                    the_row();
+
+                    // Load sub field value.
+                    $name = get_sub_field('name');
+                    $role = get_sub_field('role');
+                    $email = get_sub_field('email');
+                    $photo = get_sub_field('photo');
+            ?>
+                <div class="team__member">
+                    <div class="member__thumbnail">
+                        <img src=<?php echo $photo['url'] ?> alt=<?php echo $photo['alt'] ?>>
+                    </div>
+                    <div class="member__details">
+                        <h3 class="member__name"><?php echo $name ?></h3>
+                        <p class="member__role"><?php echo $role ?></p>
+                        <a href="mailto:<?php echo $email ?>" class="member__email"><?php echo $email ?></a>
+                    </div>
+                </div>
+            <?php 
+                }
+            ?>
+        <?php    
+        }
+        ?>
     </div>
 </section>
