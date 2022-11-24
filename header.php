@@ -21,7 +21,7 @@
                 <span class="menu-icon__line"></span>
             </label>
             <!-- Navigation -->
-            <ul class="nav__list">
+            <!-- <ul class="nav__list">
                 <li class="nav__listItem">
                     <a href="#" class="nav__link">HOME</a>
                 </li>
@@ -37,8 +37,8 @@
                 <li class="nav__listItem">
                     <a href="#" class="nav__link">EQUIPA</a>
                 </li>
-            </ul>
+            </ul> -->
+            <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
         </div>
     </header>
     <main class="main">
-        <div class="inner-wrapper inner-wrapper--main">

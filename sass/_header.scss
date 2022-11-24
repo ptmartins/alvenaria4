@@ -15,6 +15,19 @@
     .A4_png {
         height: 45px;
     }
+
+    .menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .menu-item {
+        font-size: 1.2rem;
+        font-weight: 100;
+        margin-left: 1.5rem;
+    }
 }
 
 .nav__list {

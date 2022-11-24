@@ -17,3 +17,13 @@
         wp_enqueue_script( 'main', get_template_directory_uri() . '/js/bundle.js', false, '1.0', true);
     }
     add_action( 'wp_enqueue_scripts', 'theme_scripts');
+
+    // Menu
+    function register_menus() {
+        register_nav_menus(
+          array(
+            'main-menu' => __( 'Main Menu' ),
+           )
+         );
+       }
+    add_action( 'init', 'register_menus' ); 
