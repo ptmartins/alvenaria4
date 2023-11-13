@@ -1,0 +1,32 @@
+.team {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: minmax(200px, 1fr)
+}
+
+.team:hover .thumbnail_image {
+    filter: grayscale(0);
+}
+
+.thumbnail {
+    min-height: 240px;
+    position: relative;
+}
+
+.thumbnail_image {
+    filter: grayscale(100%);
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: var(--default-transition);
+    width: 100%;
+}
+
+.role {
+    background-color: var(--neutral-grey);
+    display: inline-block;
+    font-size: .9rem;
+    margin: .75rem 0;
+    padding: .375rem .75rem;
+}

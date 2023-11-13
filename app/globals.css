@@ -1,0 +1,100 @@
+:root {
+    --neutral-blue: #e6ebee;
+    --neutral-grey: #edf1f3;
+
+    --bg: #fefefe;
+    --font-color: #243048;
+    --border-color: #e5e9f1;
+    --btn-color: var(--neutral-grey);
+    --btn-main-color: #243048;
+
+    --default-transition: .2s all ease-in;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+main,
+.main {
+    flex-grow: 1;
+}   
+
+section,
+.section {
+    min-height: 100vh;
+}
+
+.page {
+    padding: 3rem;
+}
+
+.page__title {
+    font-size: 3.2rem;
+    margin-bottom: 3.5rem;
+}
+
+.btn {
+    background-color: var(--btn-color);
+    border: none;
+    font-size: 1.1rem;
+    padding: 0.8vw 1.75vw;
+}
+
+.btn--cta,
+.btn--main {
+    background-color: var(--btn-main-color);
+    color: #fff;
+}
+
+
+@media (min-width: 768px) {
+    
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1280px) {
+    
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1536px) {
+    h1 {
+        font-size: 4rem;
+    }
+}

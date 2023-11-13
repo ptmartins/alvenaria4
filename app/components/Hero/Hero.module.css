@@ -1,0 +1,22 @@
+.hero {
+    display: flex;
+    height: calc(100vh - 100px);
+    min-height: initial;
+}
+
+.hero_content {
+    align-content: center;
+    background-color: var(--neutral-blue);
+    display: grid;
+    padding: 4.5rem;
+    width: 55%;
+}
+
+.hero_subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 3.5rem;
+}
+
+.hero_btn {
+    justify-self: start;
+}
