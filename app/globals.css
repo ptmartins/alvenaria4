@@ -74,6 +74,25 @@ section,
     color: #fff;
 }
 
+.brands {
+    margin: 0 auto;
+    width: 65%;
+}
+
+.brands .swiper {
+    height: 400px;
+}
+
+.brands .swiper-slide {
+    position: relative;
+    width: 200px;
+}
+
+.brands .swiper-slide img {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
 
 @media (min-width: 768px) {
     
