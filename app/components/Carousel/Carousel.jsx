@@ -14,6 +14,7 @@ const Carousel = ({ slides, options }) => {
         pagination = options.pagination ?? false,
         autoplay = options.autoplay ?? false,
         loop = options.loop ?? true,
+        breakpoints = options.breakpoints ?? null,
         modules = [];
 
   if(options.autoplay) {
@@ -36,6 +37,7 @@ const Carousel = ({ slides, options }) => {
       pagination={pagination}
       loop={loop}
       modules={modules}
+      breakpoints={breakpoints}
       autoplay={autoplay}
     >
       {slides.map((slide, index) => (
