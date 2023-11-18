@@ -1,0 +1,16 @@
+
+
+.brands .swiper {
+    height: 400px;
+}
+
+.brands .swiper-slide {
+    position: relative;
+    width: 200px;
+}
+
+.brands .swiper-slide img {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}

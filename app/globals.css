@@ -4,6 +4,7 @@
 
     --bg: #fefefe;
     --font-color: #243048;
+    --footer-font-color: #7989aa;
     --border-color: #e5e9f1;
     --btn-color: var(--neutral-grey);
     --btn-main-color: #243048;
@@ -42,6 +43,12 @@ ul {
     list-style: none;
 }
 
+.inner-wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+}
+
 main,
 .main {
     flex-grow: 1;
@@ -50,6 +57,15 @@ main,
 section,
 .section {
     min-height: 100vh;
+}
+
+.section__title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.section__brandings {
+    min-height: initial;
 }
 
 .page {
@@ -74,25 +90,6 @@ section,
     color: #fff;
 }
 
-.brands {
-    margin: 0 auto;
-    width: 65%;
-}
-
-.brands .swiper {
-    height: 400px;
-}
-
-.brands .swiper-slide {
-    position: relative;
-    width: 200px;
-}
-
-.brands .swiper-slide img {
-    height: 100%;
-    object-fit: contain;
-    width: 100%;
-}
 
 @media (min-width: 768px) {
     
