@@ -1,0 +1,21 @@
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.service {
+    align-items: center;
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: center;
+}
+
+.service::after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+.service:nth-child(2n-1) {
+    background-color: var(--neutral-blue);
+}

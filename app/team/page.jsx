@@ -6,7 +6,9 @@ import contentfulConfig from '../../contentfulConfig';
 
 async function getTeamData() {
     const client = createClient(contentfulConfig),
-          res = await client.getEntries();
+          res = await client.getEntries({
+            content_type: 'team'
+        });
 
     return res; 
 }
@@ -14,20 +16,33 @@ async function getTeamData() {
 
 export default async function Team() {
 
-    const data = await getTeamData();
+    const data = await getTeamData(),
+          team = data.items;
 
     return(
         <div className="page">
-            <h1 className="page__title">A equipa</h1>
-            <div className={styles.team}>
-                <div className={styles.team_member}>
-                    <div className={styles.thumbnail}>
-                        <Image src="/images/team/filipe_campelo.jpeg" alt="foo" fill="true" className={styles.thumbnail_image} />
-                    </div>
-                    <div className={styles.body}>
-                        <span className={styles.role}>Director Técnico</span>
-                        <h2 className={styles.name}>Filipe Campelo</h2>
-                    </div>
+            <div className="inner-wrapper">
+                <h1 className="page__title">A equipa</h1>
+                <div className={styles.team}>
+
+                    {team.map(item => {
+                        return(
+                            <div className={styles.team_member}>
+                                <div className={styles.thumbnail}>
+                                    <Image 
+                                        src={"/images/team/unknown_male.png"}
+                                        alt="foo" 
+                                        fill="true" 
+                                        className={styles.thumbnail_image}
+                                    />
+                                </div>
+                                <div className={styles.body}>
+                                    <span className={styles.role}>{item.fields.cargo}</span>
+                                    <h2 className={styles.name}>{item.fields.nome}</h2>
+                                </div>
+                            </div>
+                        ) 
+                    })}
                 </div>
             </div>
         </div>    

@@ -43,7 +43,6 @@ export default function Brandings() {
     return(
         <section className="section section__brandings">
             <div className="inner-wrapper">
-                <h2 className="section__title">Algumas das marcas com que trabalhamos</h2>
                 <div className="brands">
                     <Carousel slides={images} options={carouselOptions}/>
                 </div>

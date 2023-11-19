@@ -9,7 +9,7 @@ export default function NavBar() {
                     <Link href="/about" className={styles.nav_link}>A empresa</Link>
                 </li>
                 <li className={styles.nav_item}>
-                    <Link href="/about" className={styles.nav_link}>Projectos</Link>
+                    <Link href="/projects" className={styles.nav_link}>Projectos</Link>
                 </li>
                 <li className={styles.nav_item}>
                     <Link href="/team" className={styles.nav_link}>A equipa</Link>

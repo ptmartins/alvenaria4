@@ -2,11 +2,14 @@
     border: 1px solid var(--border-color);
 }
 
-.header .inner_wrapper {
+.inner_wrapper {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1440px;
     padding: 0 3rem;
+    width: 100%;
 }
 
 .logo {

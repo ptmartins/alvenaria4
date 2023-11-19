@@ -1,7 +1,7 @@
-export default function Contacts() {
+export default function Projects() {
     return(
         <div className="inner-wrapper">
-            <h1>Contacts</h1>
+            <h1>Projects</h1>
         </div>
     )
 }
