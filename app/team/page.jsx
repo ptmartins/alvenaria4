@@ -21,7 +21,7 @@ export default async function Team() {
 
     return(
         <div className="page">
-            <div className="inner-wrapper">
+            <div className={`inner-wrapper ${styles.inner_wrapper__team}`}>
                 <h1 className="page__title">A equipa</h1>
                 <div className={styles.team}>
 

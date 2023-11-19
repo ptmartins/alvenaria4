@@ -1,12 +1,12 @@
-import { Inter } from 'next/font/google';
+import { Inter} from 'next/font/google';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Alvanaria 4', 
+  title: 'Alvenaria 4', 
   description: 'Alvenaria 4 - Beja'
 }
  

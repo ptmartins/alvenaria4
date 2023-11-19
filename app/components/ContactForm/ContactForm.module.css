@@ -1,0 +1,23 @@
+.form {
+    background-color: var(--neutral-grey);
+    display: grid;
+    gap: .75rem;
+    grid-template-columns: 1fr;
+    padding: 3rem;
+}
+
+.txt {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.input {
+    border: 1px solid var(--border-color);
+    padding: .75rem;
+}
+
+.btn_submit {
+    justify-self: flex-end;
+    margin-top: 1rem;
+}

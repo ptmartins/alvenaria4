@@ -9,7 +9,7 @@ export default function Header() {
             <div className={styles.inner_wrapper}>
                 <div className={styles.logo}>
                     <Link href="/">
-                        <Image src="/images/logo.png" fill="true" quality={90} alt="Alvenaria 4 - Logo"/> 
+                        <Image src="/images/logo.png" title="Alvenaria4" fill="true" quality={90} alt="Alvenaria 4 - Logo"/> 
                     </Link>
                 </div>
                 <Nav />

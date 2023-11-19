@@ -1,7 +1,8 @@
 import styles from './Footer.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import {FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaRegistered, FaFacebookSquare, FaInstagramSquare, FaLinkedin} from 'react-icons/fa';
+import SocialNav from '../SocialNav/SocialNav';
+import {FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaRegistered} from 'react-icons/fa';
 import {GiDiploma} from 'react-icons/gi';
 
 export default function Footer() {
@@ -33,11 +34,7 @@ export default function Footer() {
                 <div className={styles.copyright}>
                     <span>Copyright &copy; 2023 - Alvenaria 4</span>
                 </div>
-                <div className={styles.social}>
-                    <Link href="" className={styles.social_link}> <FaFacebookSquare /> </Link>
-                    <Link href="" className={styles.social_link}> <FaInstagramSquare /> </Link>
-                    <Link href="" className={styles.social_link}> <FaLinkedin /> </Link>
-                </div>
+                <SocialNav />
             </div>           
         </footer>
     )

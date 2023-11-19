@@ -1,4 +1,5 @@
 :root {
+    --accent-color: #c7791a;
     --neutral-blue: #e6ebee;
     --neutral-grey: #edf1f3;
 
@@ -29,8 +30,13 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 1rem;
+    font-weight: 200;
     line-height: 1.5;
     min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h1 {
@@ -41,6 +47,19 @@ h1 {
 
 ul {
     list-style: none;
+}
+
+.u-link {
+    color: var(--font-color);
+    font-weight: 200;
+    opacity: .65;
+    transition: var(--default-transition);
+}
+
+.u-link:hover {
+    color: var(--accent-color);
+    opacity: 1;
+    text-decoration: none;
 }
 
 .inner-wrapper {

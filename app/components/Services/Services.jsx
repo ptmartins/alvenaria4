@@ -48,7 +48,7 @@ export default async function Services() {
                 <div className={styles.services}>
                     {services.map((service, index) => {
                         return(
-                            <div className={styles.service}>
+                            <div key={index} className={styles.service}>
                                 {getServiceIcon(service.fields.servico)}
                                 <h3 key={index}>{service.fields.servico}</h3>
                             </div>

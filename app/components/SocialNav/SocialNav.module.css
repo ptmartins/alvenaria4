@@ -1,0 +1,16 @@
+.social {
+    display: flex;
+    justify-content: space-between;
+    gap: .75rem;
+}
+
+.social_link {
+    color: var(--footer-font-color);
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: var(--default-transition);
+}
+
+.social_link:hover {
+    color: var(--font-color);
+}

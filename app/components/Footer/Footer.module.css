@@ -58,7 +58,7 @@
     margin-inline-end: 1.5rem;
 }
 
-.social {
+/* .social {
     display: flex;
     justify-content: space-between;
     gap: .75rem;
@@ -73,7 +73,7 @@
 
 .social_link:hover {
     color: var(--font-color);
-}
+} */
 
 .copyright {
     text-align: center;
