@@ -1,11 +1,8 @@
 
-// 'use client'
-
-// import ContactForm from '../ContactForm/ContactForm';
 import Link from 'next/link';
 import styles from './Contacts.module.css';
 
-export default function ContactPage() {
+export default function Contacts() {
   return (
     <section className={`section ${styles.section_contacts}`}>
         <div className={`inner-wrapper ${styles.inner_wrapper__contacts}`}>
