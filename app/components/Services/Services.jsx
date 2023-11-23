@@ -49,8 +49,10 @@ export default async function Services() {
                     {services.map((service, index) => {
                         return(
                             <div key={index} className={styles.service}>
-                                {getServiceIcon(service.fields.servico)}
-                                <h3 key={index}>{service.fields.servico}</h3>
+                                <div className={styles.service_icon}>
+                                    {getServiceIcon(service.fields.servico)}
+                                </div>
+                                <h3 key={index} className={styles.service_title}>{service.fields.servico}</h3>
                             </div>
                         )
                     })}

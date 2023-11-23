@@ -1,14 +1,16 @@
 .nav {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .nav_list {
-    display: flex;
+    display: none;
 }
 
 .nav_item {
     margin-inline-start: 1.5rem;
+    user-select: none;
 }
 
 .nav_link {
@@ -17,3 +19,40 @@
     font-weight: 400;
     text-decoration: none;
 }
+
+.burger {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2.1rem;
+}
+
+.mobileMenu {
+    background-color: var(--neutral-grey);
+    transform: scale(0);
+    inset-inline-end: 0;
+    min-width: 180px;
+    position: absolute;
+    top: calc(100% + 1.5rem);
+    transform-origin: top right;
+    transition: var(--default-transition);
+    z-index: 2;
+}
+
+.mobileMenu.show {
+    transform: scale(1);
+}
+
+.mobileMenu .nav_item {
+    margin-bottom: 1.5rem;
+    text-align: end;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1280px) {}
+
+@media (min-width: 1536px) {}
