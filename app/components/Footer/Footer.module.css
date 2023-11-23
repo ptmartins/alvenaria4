@@ -21,16 +21,18 @@
     padding: 1.5rem;
 }
 
-.logo {
+.footer_logo {
     height: 100px;
     position: relative;
     width: 250px;
 }
 
 .corporate {
-    display: flex;
-    flex-wrap: wrap;
+    justify-items: end;
+    display: grid;
     font-size: 11px;
+    gap: .375rem;
+    grid-template-columns: 1fr;
     opacity: .8;
 }
 
@@ -39,9 +41,6 @@
 }
 
 .footer_bottom {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
     padding: 0 1.5rem 1.5rem;
 }
 

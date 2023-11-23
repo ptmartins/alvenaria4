@@ -6,13 +6,11 @@ export default function Footer() {
         <footer className={styles.footer}>
             <div className={styles.footer_top}>
                 <div className={styles.footer_logo}>
-                    <div className={styles.logo}>
-                        <Image src="/images/logo.png" fill="true" quality={90} alt="Alvenaria 4 - Logo"/> 
-                    </div>
-                    <div className={styles.corporate}>
-                        <span>  NIPC 516 571 958</span> 
-                        <span>  Alvará 100700 – PAR (Classe 2)</span> 
-                    </div>
+                    <Image src="/images/logo.png" fill="true" quality={90} alt="Alvenaria 4 - Logo"/> 
+                </div>
+                <div className={styles.corporate}>
+                    <span>  NIPC 516 571 958</span> 
+                    <span>  Alvará 100700 – PAR (Classe 2)</span> 
                 </div>
             </div>
             <div className={styles.footer_bottom}> 
