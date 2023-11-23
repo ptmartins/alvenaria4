@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Hero.module.css';
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Hero() {
     return(
@@ -13,6 +14,7 @@ export default function Hero() {
                 </div>  
                 <div className={styles.hero_thumbnail}>
                     <Image src="/images/hero.jpg" fill="true" />
+                    <span className={styles.effect}> <FaArrowRightLong /> </span>
                 </div>
                 <div className={styles.hero_bottomThumb}>
                     <Image src="/images/hero_bottom.jpg" fill="true" />

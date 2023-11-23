@@ -37,6 +37,20 @@
     object-fit: cover;
 }
 
+.effect {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    bottom: 3rem;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    height: 90px;
+    inset-inline-start: -45px;
+    position: absolute;
+    width: 90px;
+    transform: rotate(-35deg);
+}
 
 .hero_floatingThumb,
 .inner-wrapper {
