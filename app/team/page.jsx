@@ -13,7 +13,6 @@ async function getTeamData() {
     return res; 
 }
 
-
 export default async function Team() {
 
     const data = await getTeamData(),

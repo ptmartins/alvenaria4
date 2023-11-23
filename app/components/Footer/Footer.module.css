@@ -18,7 +18,7 @@
     gap: 3rem;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
-    padding: 5rem 1.5rem;
+    padding: 1.5rem;
 }
 
 .logo {
@@ -51,29 +51,12 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 0 1.5rem 1.5rem;
 }
 
 .corporate span {
     margin-inline-end: 1.5rem;
 }
-
-/* .social {
-    display: flex;
-    justify-content: space-between;
-    gap: .75rem;
-}
-
-.social_link {
-    color: var(--footer-font-color);
-    font-size: 1.6rem;
-    text-decoration: none;
-    transition: var(--default-transition);
-}
-
-.social_link:hover {
-    color: var(--font-color);
-} */
 
 .copyright {
     text-align: center;

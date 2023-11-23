@@ -42,9 +42,9 @@ export default async function Services() {
           };
 
     return(
-        <section className="section section--services">
+        <section className={`section ${styles.section_services}`}>
             <div className="inner-wrapper">
-                <h2 className="section__title">Servicos</h2>
+                <h2 className={`section-title`}>Servicos</h2>
                 <div className={styles.services}>
                     {services.map((service, index) => {
                         return(

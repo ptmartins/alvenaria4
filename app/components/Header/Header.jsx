@@ -6,7 +6,7 @@ import styles from './Header.module.css';
 export default function Header() {
     return(
         <header className={styles.header}>
-            <div className={styles.inner_wrapper}>
+            <div className={`inner-wrapper ${styles.header_inner}`}>
                 <div className={styles.logo}>
                     <Link href="/">
                         <Image src="/images/logo.png" title="Alvenaria4" fill="true" quality={90} alt="Alvenaria 4 - Logo"/> 

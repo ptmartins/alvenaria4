@@ -1,5 +1,4 @@
 .form {
-    background-color: var(--neutral-grey);
     display: grid;
     gap: .75rem;
     grid-template-columns: 1fr;

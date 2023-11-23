@@ -1,15 +1,19 @@
 .hero {
-    display: flex;
-    height: calc(100vh - 100px);
+    background-color: var(--neutral-grey);
+    height: calc(110vh);
     min-height: initial;
     padding: 0;
 }
 
+.hero_inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .hero_content {
     align-content: center;
-    background-color: var(--neutral-blue);
     display: grid;
-    padding: 4.5rem;
+    padding: 4.5rem 4.5rem 4.5rem 0;
     width: 55%;
 }
 
@@ -20,4 +24,35 @@
 
 .hero_btn {
     justify-self: start;
+}
+
+.hero_thumbnail {
+    flex-grow: 1;
+    margin: 4.5rem 0;
+    position: relative;
+}
+
+.hero_thumbnail img {
+    filter: grayscale(.85);
+    object-fit: cover;
+}
+
+
+.hero_floatingThumb,
+.inner-wrapper {
+    margin: 0 auto;
+
+}
+
+.hero_bottomThumb {
+    height: 520px;
+    margin: 0 auto;
+    max-width: 1440px;
+    position: relative;
+    width: 100%;
+}
+
+.hero_bottomThumb img {
+    filter: grayscale(1);
+    object-fit: cover;
 }
