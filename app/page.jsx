@@ -1,5 +1,3 @@
-import Link from 'next/link';
-import Image from 'next/image';
 import Hero from './components/Hero/Hero';
 import Services from './components/Services/Services'; 
 import Featured from './components/Featured/Featured'; 

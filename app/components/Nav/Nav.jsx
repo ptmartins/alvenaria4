@@ -15,7 +15,7 @@ export default function NavBar() {
                     <Link href="/team" className={styles.nav_link}>A equipa</Link>
                 </li>
                 <li className={styles.nav_item}>
-                    <Link href="/contacts" className={styles.nav_link}>Contactos</Link>
+                    <Link href="#" className={styles.nav_link}>Contactos</Link>
                 </li>
             </ul>
         </div>

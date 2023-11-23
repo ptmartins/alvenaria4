@@ -1,7 +1,7 @@
 
-'use client'
+// 'use client'
 
-import ContactForm from '../ContactForm/ContactForm';
+// import ContactForm from '../ContactForm/ContactForm';
 import Link from 'next/link';
 import styles from './Contacts.module.css';
 
@@ -23,7 +23,7 @@ export default function ContactPage() {
                 </div>
             </div>
             <div className={styles.form}>
-                <ContactForm />
+                {/* <ContactForm /> */}
             </div>
         </div>
     </section>
