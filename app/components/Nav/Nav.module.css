@@ -51,7 +51,16 @@
 
 }
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    .burger {
+        display: none; 
+    }
+
+    .nav_list {
+        display: flex;
+    }
+    
+}
 
 @media (min-width: 1280px) {}
 
